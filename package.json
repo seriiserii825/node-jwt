@@ -1,0 +1,25 @@
+{
+  "name": "node-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.9",
+    "sequelize": "^6.6.4",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "predev": "fuser -k 3000/tcp && echo 'Terminated' || echo 'Nothing was running on the 3000'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
